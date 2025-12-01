@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>AquaPure - Nuestros Productos</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_319)">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_319">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/">Inicio</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/productos">Productos</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="/prototipo-ecommerce-aguas/carrito"
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <span
+              class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/perfil" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+            style="background-image: url('../assets/imgs/no-profile.jpg')"></a>
+          <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+            id="btnMenu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex flex-col lg:flex-row items-start justify-between gap-4 mb-8">
+          <h2 class="text-4xl font-black text-slate-800 dark:text-slate-100">Nuestros Productos</h2>
+          <div class="flex items-center gap-2 flex-wrap">
+            <button
+              class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary px-4 text-sm font-bold text-white">
+              Todos
+            </button>
+            <button
+              class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-black/5 dark:bg-white/5 px-4 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-black/10 dark:hover:bg-white/10 transition-colors">
+              Garrafones
+            </button>
+            <button
+              class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-black/5 dark:bg-white/5 px-4 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-black/10 dark:hover:bg-white/10 transition-colors">
+              Botellas
+            </button>
+            <button
+              class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-black/5 dark:bg-white/5 px-4 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-black/10 dark:hover:bg-white/10 transition-colors">
+              Ofertas
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGaDNNk7Qd6CJLPSr3gGUHco1Tkv78E8CY0ZuENt_EOAjk3hlQr11nlWenwf-1EiqPmdSFrsItw8x59_Oft2MPMvuew1eoiHwVx-Nhu5PM3NpTHXxruCN0knpf76saiOB_2d9c5guqnfqwkkEoJYf8dBu3CpwlFb05kh5Xu8EOB_6i_9OycrKB2NjNWHonRT3Eb-gZx8cVLDurCXWoXgezwSMdx59BukfHe-JrTNCCL_XwDevspVxvgg4dbXQMJs3Ar6IdJoA8vMLk");'>
+              </div>
+              <div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">OFERTA</div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Garrafón 20L</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">Ideal para el hogar o la oficina.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$3.500</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCK9Yo0Sy90Q6sDhBZ27NkyhdRnFcWXr6vyhBNG1dFr3y99XfvYGmksjJsNhuRfiKMrTaV3lck9n5njO-YK9isGXD9-6uWZp8-g1nUUaIHT0ewS3sRt5GOazr57rpdNKL54S6uhVpRF-JsIWkn0vThI4wsqIrDQrv2UFhsBY5q2A2uqsIiG_5d4GZ1N3zpsEFnO36aklkB33vYeoNNifZ04vBcz_GFxtxHAUJG7YGTdhixjqG4IUsX_pmYH_2YaRVhjdHXqMulzu4F0");'>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Botella 1.5L</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">Perfecta para llevar contigo.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$1.500</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCozw05X5_jXkYgJ5UXkaP-zuJRcyn1S-LGLLoHpto7v-XPoZ-t-XRZeD3ryyBOdU3tT1QHefaPwhHNR36ipC3ES3-9FeoJ-S-ZMiq3c58Z1Dbqm5bZ7WSHh-y8BO2lyeTTOj0cPocFOD4oEnIZ_1JuDq6KXGIsZwD6cmZbaVYVfuyL0X1R4ZHV9FaRsf4SE9e_-2Bc1sK1jJMUb21vdNR38OvXvnQOPD74s1-WhiBGFhBI-tcC9OdgroH_xPu-Qx5hDq8_cg4y5BAz");'>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Botella 500ml</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">Tamaño práctico para el día a día.
+              </p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$800</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCydUFA-wQSgXhbIZLsY4kLzZ9GVeBun2PbFewCuffKMxdcXcmmitJHpzOwPnhcNI-XNFJfnK0azh4MdFK3mW61Ads82GcPlOB2I94UGtq1Dy7c2SVDjAU2HKR2PolAEkKwdXwysnu9fgOoJGqrSSibiTzo_yrUsT8TYAAdiq_iVY2hiuO_pWS1Wfv-4HtzxczOj0SWn9vSLhNCg80At0CaMz2wAtIib_GXLLzIJytZQ2f3Hq1lqLltqgssrNfWdmU0KeNz40xFy0gz");'>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Paquete de 12 Botellas
+                500ml</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">Suficiente para compartir.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$8.500</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMDe9F1R3jNSIiPTpqyWF7HiF84VsOghoqDk8jXmzHBpoas_8v-hG_BRSMaB5B4VjnRUEsLcIcA9MQDUIkytdflu80W9UzPo1LfoGQSiGxSndPq-ANJzdNf7nW8ixiDjG0wZj1ky2W-qbRJECtzSPOYg8gVjTCMDyB-1j8FapJRRISWlhe1mmdH5l3er3-8pjRZkgMzrT6dHwmBiKhohezeLr7WUAujSM6ay5cDY_g9zRAktvcFT1DC5hU_w-fIT1SjwnJ-_-BjfSm");'>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Paquete de 6 Botellas
+                1.5L</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">Para hidratarte por más tiempo.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$8.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 sm:col-span-2 md:col-span-1">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnYoXm1aKZW_QnibWfSkdHvrwACbKB4eX6Ci0Ia4iAsEhdEv4keL1P5LCvEt_pXmp0NBeDU4widiWwz98eVgnxPdyaKNDkwSm8SCcULUkVd8HcAFb0ZGt-GUJPlwKbof0ZX2Vs21lJ8xx2zYKbcurEsJXel23H1hnPnRsYyH-6671BPy_IDH6RVOzOeFCZ3IEXknHIwyIW_Q0fA-ZAaeC0BTV1zyzdbNOr5poUiLrMyG1vlHxFfgcCNnmPL1G_M-Si3WteXqI9Yl7d");'>
+              </div>
+              <div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">COMBO</div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Combo Familiar</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">2 Garrafones + 1 Paquete de 12
+                Botellas 500ml.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$14.500</p>
+              </div>
+            </div>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/producto"
+            class="group relative flex flex-col rounded-xl overflow-hidden bg-white/50 dark:bg-black/20 shadow-sm transition-all hover:shadow-lg hover:-translate-y-1 sm:col-span-2 md:col-span-1">
+            <div class="relative">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiMYnJ-I1lecmnQemnESbhKViDFMoW-YnYTEk_LGfFMrz-zHH76N0M23CeqkRoW2oGitNHcEyBxv0jYHJ95oV-cFz36RNAHkE3dCZtBFPVe8AyNMtZ5F-WGg3Y44gedtrBKvFWQC5L7SXZQXRlijJ8qgkipzQfQoyo3YtfAgBZ_7-VAZZaR_50Q5B2Uo-lhClVf4BzafWvyTqi55l1emW1ZVwT3t116iZof7Uw752M8HDON_ySs0WQwG8beQPZPEKYycHdcyoJRoJT");'>
+              </div>
+              <div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">COMBO</div>
+            </div>
+            <div class="p-4 flex flex-col flex-grow">
+              <h3 class="text-slate-800 dark:text-slate-100 font-bold text-base leading-tight">Combo Deportivo</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1 flex-grow">1 Paquete de 6 Botellas 1.5L + 2
+                Botellas 500ml.</p>
+              <div class="flex items-baseline justify-between mt-4">
+                <p class="text-primary text-xl font-black">$9.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+<div class="fixed bottom-6 right-6 z-50" x-data="{ open: true }">
+      <div class="mb-4 w-80 rounded-xl bg-white shadow-2xl dark:bg-slate-900 sm:w-96" x-show="open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:enter-start="opacity-0 transform translate-y-4"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 transform translate-y-4"
+        x-transition:leave-start="opacity-100 transform translate-y-0">
+        <div class="flex items-center justify-between rounded-t-xl bg-primary px-4 py-3">
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319_chat)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319_chat">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="text-lg font-bold text-white">AquaBot</h3>
+          </div>
+          <button @click="open = false" class="rounded-full p-1 text-white hover:bg-white/20">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="h-96 overflow-y-auto p-4">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V4H8"></path>
+                  <path d="M16 4h-4v4"></path>
+                  <path d="M16 14v2.343a4 4 0 0 1-1.172 2.828L12 22l-2.828-2.828A4 4 0 0 1 8 16.343V14"></path>
+                  <rect height="8" rx="2" width="16" x="4" y="6"></rect>
+                </svg>
+              </div>
+              <div class="max-w-xs rounded-r-lg rounded-bl-lg bg-slate-100 p-3 text-sm dark:bg-slate-800">
+                <p class="text-slate-800 dark:text-slate-200">¡Hola! 👋 Soy AquaBot, tu asistente virtual. ¿Cómo puedo
+                  ayudarte hoy con tu servicio de agua purificada?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-200 p-4 dark:border-slate-800">
+          <div class="relative">
+            <input
+              class="w-full rounded-full border-slate-300 bg-slate-50 py-2 pl-4 pr-12 text-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800"
+              placeholder="Escribe tu mensaje..." type="text" />
+            <button
+              class="absolute inset-y-0 right-0 flex h-full w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" x2="11" y1="2" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button @click="open = !open"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" x-show="!open" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" style="display: none;" viewBox="0 0 24 24" x-show="open" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

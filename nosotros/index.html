@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Página Nosotros</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        display: ["Public Sans"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- TopNavBar -->
+        <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_319)">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_319">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+                </div>
+                <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/">Inicio</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/productos">Productos</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="/prototipo-ecommerce-aguas/carrito"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+                        <span class="material-symbols-outlined"> shopping_cart </span>
+                        <span
+                            class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+                    </a>
+                    <a href="/prototipo-ecommerce-aguas/perfil"
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+                        style="background-image: url('../assets/imgs/no-profile.jpg')"></a>
+                    <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+                        id="btnMenu">
+                        <span class="material-symbols-outlined text-2xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <!-- HeroSection -->
+            <div class="@container">
+                <div class="p-4">
+                    <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-center justify-center p-4 text-center"
+                        data-alt="Clear blue water splashing in a dynamic motion"
+                        style='background-image: linear-gradient(rgba(16, 28, 34, 0.3) 0%, rgba(16, 28, 34, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOBxXi3Gzrp3iJ7GoaGZbNxevOH1nLnlE_IF5dJ1qO1BdQFIwJ4jBtyflX4SFN2aSJULN1IMyja8uq5icfTabfUfIE7z2y95hopiKBCxJ-EhaOFeFvN-eIKzXLaq8Hjb-Gko4-o-OJS6RN--YF6zDlkA-_-xzVGvZekWZYEXTKUN0RplvriZIAvkIcKvJEcfkme3BuKggEXl5-0ehcFDR6iwl3YdOWD3Wf7i3Bun4HAfLHN2wdMGA9lUof2ReypVOSjiKz83BXIdjN");'>
+                        <div class="flex flex-col gap-2">
+                            <h1
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                Conoce Nuestra Historia</h1>
+                            <h2 class="text-slate-200 text-sm font-normal leading-normal @[480px]:text-base max-w-xl">
+                                Nuestra pasión es llevar agua pura y saludable a tu hogar, cuidando cada
+                                detalle del proceso.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Story Section (Card) -->
+            <div class="px-4 py-10 md:py-16 px-10 md:px-40">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8 rounded-lg ">
+                    <div class="flex flex-col gap-2 flex-[2_2_0px]">
+                        <p class="text-primary text-sm font-bold leading-normal tracking-wide">NUESTRA
+                            TRAYECTORIA</p>
+                        <p class="text-slate-900 dark:text-slate-50 text-2xl md:text-3xl font-bold leading-tight">
+                            Calidad en Cada Gota</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed mt-2">
+                            Desde nuestros inicios, nos hemos dedicado a perfeccionar nuestro proceso de
+                            purificación. Utilizamos tecnología de vanguardia para garantizar que cada
+                            botella de agua que llega a tus manos cumple con los más altos estándares de
+                            pureza y seguridad.</p>
+                    </div>
+                    <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                        data-alt="A serene natural spring with crystal clear water flowing over rocks."
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzvTyMPluNbmxpFmgCyi6hBmsJwv1OtTtXaxgJi2_7DCEtIAHRKnXZhrtR9q9Lu30_BUFS6mtJxEKsBJiO3vk5ZytpWwazMTw_6IaX9g_CMD2vWoXbkB7Lqs9_ETMUBWZXieDN-Vdl-MrJea5pjQy3_tpZWZ34_rcL-nePuPB3fXx0tFj_itd-b1h2CCbgefkngKz1rVLk8YagzK3WSzeV5Ld9NJQhow3m--yFlhl-5qT0olowYl5wRtPE1Zfl2GihAM0TJEizlQk_");'>
+                    </div>
+                </div>
+            </div>
+            <!-- FeatureSection -->
+            <div class="flex flex-col gap-10 px-4 py-10 md:py-16 bg-white dark:bg-background-dark/50 px-10 md:px-40">
+                <div class="flex flex-col gap-4 text-center items-center">
+                    <h1
+                        class="text-slate-900 dark:text-slate-50 tracking-light text-[32px] font-bold leading-tight md:text-4xl max-w-2xl">
+                        Nuestros Pilares</h1>
+                    <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl">
+                        Creemos en la calidad, la integridad y el servicio al cliente como los fundamentos
+                        de nuestro trabajo diario.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col">
+                        <div class="text-primary" data-icon="Target">
+                            <span class="material-symbols-outlined !text-4xl">track_changes</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">
+                                Misión</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
+                                Proporcionar agua purificada de la más alta calidad para mejorar la salud y
+                                el bienestar de nuestros clientes.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col">
+                        <div class="text-primary" data-icon="Eye">
+                            <span class="material-symbols-outlined !text-4xl">visibility</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">
+                                Visión</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
+                                Ser la empresa líder en distribución de agua purificada, reconocida por
+                                nuestra innovación y compromiso con la sostenibilidad.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-6 flex-col">
+                        <div class="text-primary" data-icon="Heart">
+                            <span class="material-symbols-outlined !text-4xl">favorite</span>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-slate-900 dark:text-slate-50 text-lg font-bold leading-tight">
+                                Valores</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">
+                                Calidad, integridad y un servicio excepcional son los principios que guían
+                                cada una de nuestras acciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team Section -->
+            <div class="px-4 py-10 md:py-20 px-10 md:px-40">
+                <!-- SectionHeader -->
+                <div class="text-center mb-10">
+                    <h2
+                        class="text-slate-900 dark:text-slate-50 text-3xl md:text-4xl font-bold leading-tight tracking-[-0.015em]">
+                        El Equipo Detrás de la Pureza</h2>
+                    <p
+                        class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal max-w-2xl mx-auto mt-4">
+                        Personas apasionadas y comprometidas con llevarte el agua de la mejor calidad.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-cover bg-center mb-4"
+                            data-alt="Professional headshot of Ana García"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxotSonKwFyAO3bHFXNh1PqeCEuj4z7q6l2Ae_L9HTBZn-N0NBtGDZATzYR4lTtFIuPHL9DY74xF8diINLvLL-7YgASptcun8NY0o--Dvtk9qHgsRROjYyk5n22RuW_KYOKOGvYnaqzzArVMc4NJU9xXN9QjkOpioGcYM6TLm1imN9tBPWvcf360j7o0a_4EGRBbzuef-4b2l0VVHpD5UX7ILDuS7N2phgVSYgeNmNcYv91uugI36D9_hJpKKJhSFTfUmRgN1LhkrS');">
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold">Ana García</h3>
+                        <p class="text-primary text-sm font-medium">Fundadora y CEO</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-cover bg-center mb-4"
+                            data-alt="Professional headshot of Carlos Rodríguez"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTEh7qAT0vUnL79Sf0KTXLwc8nWgE2frFYXeQ4eODe7so6SFvUjTBwfYATXA1qkKpV2Mh5lVzRYUt3udwLN97CRWlGcqOc_n3S-m3iDDEICWQROvYOZ76RHL2Ro7HlTVa3EPQJZoPFVpO4GMkE009gVCBSDlEihCLkeAYBX_80A-8bmJZ8xSHsxcZGnZDzEAi4ValZZOlb3MBIPA-x0wRNuG22R0Jnc5310iNfw_EKqJc1xiJApVjbC-aNSg01Zxhwuy22rZKi5AdB');">
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold">Carlos Rodríguez
+                        </h3>
+                        <p class="text-primary text-sm font-medium">Jefe de Operaciones</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-32 h-32 rounded-full bg-cover bg-center mb-4"
+                            data-alt="Professional headshot of Laura Martinez"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdy9_WPw6pO6_vyFQcfuYyYQJN0_rBk6iwOKY-Erot5mHSmVH7oCB3vRVUceZBLc9tTx5BZFMQqsHCC3VoPrxgf_P6WcCBXarDfZoojhLK-P8_voAasUzXKxCG4JJ8PD1jYI4K1MPKP7_b1ZRgN2g7zTxHEjN-qGUjqDJnO7Pk98PK_EcuMxDZl9mpnNRbn7Td6_dWlwCztmUvYXLoLEB5hv4d_0mUDAa1WV7sw3MEZrgGv0j-kuTAqGDlcCreStI0r46zvtbdZXkV');">
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-50 text-lg font-bold">Laura Martinez</h3>
+                        <p class="text-primary text-sm font-medium">Directora de Calidad</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Section -->
+            <div class="px-4 py-10 md:py-16 px-10 md:px-40">
+                <div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-slate-900 dark:text-slate-50 text-2xl md:text-3xl font-bold leading-tight">
+                                ¿Listo para hidratarte con la mejor calidad?</h2>
+                            <p class="text-slate-600 dark:text-slate-400 text-base">Descubre la frescura y
+                                pureza en cada uno de nuestros productos.</p>
+                        </div>
+                        <button
+                            class="flex-shrink-0 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-slate-50 text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                            <span class="truncate">Explora Nuestros Productos</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="fixed bottom-6 right-6 z-50" x-data="{ open: true }">
+      <div class="mb-4 w-80 rounded-xl bg-white shadow-2xl dark:bg-slate-900 sm:w-96" x-show="open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:enter-start="opacity-0 transform translate-y-4"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 transform translate-y-4"
+        x-transition:leave-start="opacity-100 transform translate-y-0">
+        <div class="flex items-center justify-between rounded-t-xl bg-primary px-4 py-3">
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319_chat)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319_chat">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="text-lg font-bold text-white">AquaBot</h3>
+          </div>
+          <button @click="open = false" class="rounded-full p-1 text-white hover:bg-white/20">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="h-96 overflow-y-auto p-4">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V4H8"></path>
+                  <path d="M16 4h-4v4"></path>
+                  <path d="M16 14v2.343a4 4 0 0 1-1.172 2.828L12 22l-2.828-2.828A4 4 0 0 1 8 16.343V14"></path>
+                  <rect height="8" rx="2" width="16" x="4" y="6"></rect>
+                </svg>
+              </div>
+              <div class="max-w-xs rounded-r-lg rounded-bl-lg bg-slate-100 p-3 text-sm dark:bg-slate-800">
+                <p class="text-slate-800 dark:text-slate-200">¡Hola! 👋 Soy AquaBot, tu asistente virtual. ¿Cómo puedo
+                  ayudarte hoy con tu servicio de agua purificada?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-200 p-4 dark:border-slate-800">
+          <div class="relative">
+            <input
+              class="w-full rounded-full border-slate-300 bg-slate-50 py-2 pl-4 pr-12 text-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800"
+              placeholder="Escribe tu mensaje..." type="text" />
+            <button
+              class="absolute inset-y-0 right-0 flex h-full w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" x2="11" y1="2" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button @click="open = !open"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" x-show="!open" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" style="display: none;" viewBox="0 0 24 24" x-show="open" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

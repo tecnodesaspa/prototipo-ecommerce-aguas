@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Confirmación de Pedido - Señales Viales Pro</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+    <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_319)">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_319">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/">Inicio</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/productos">Productos</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="/prototipo-ecommerce-aguas/carrito"
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <span
+              class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/perfil" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+            style="background-image: url('../assets/imgs/no-profile.jpg')"></a>
+          <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+            id="btnMenu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+      <main class="flex flex-1 justify-center py-8 px-4 sm:px-6 lg:px-8">
+        <div class="layout-content-container flex flex-col w-full max-w-4xl flex-1">
+          <div
+            class="bg-white dark:bg-slate-900/70 shadow-sm rounded-xl border border-slate-200/80 dark:border-slate-800/80 p-6 md:p-10">
+            <div class="flex flex-col items-center text-center">
+              <div class="flex items-center justify-center size-16 bg-green-100 dark:bg-green-900/50 rounded-full mb-4">
+                <span class="material-symbols-outlined text-4xl text-green-500 dark:text-green-400">check</span>
+              </div>
+              <h1 class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight">¡Gracias por tu
+                compra!</h1>
+              <p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal mt-2">Hemos enviado un
+                correo de confirmación con los detalles a tu email.</p>
+            </div>
+            <div
+              class="mt-8 p-4 bg-slate-100/80 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-800">
+              <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div class="flex-1">
+                  <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Número de Pedido</p>
+                  <p class="text-slate-800 dark:text-slate-200 text-base font-semibold leading-normal mt-1">#12345-ABC
+                  </p>
+                </div>
+                <div class="flex-1">
+                  <p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Fecha del Pedido</p>
+                  <p class="text-slate-800 dark:text-slate-200 text-base font-semibold leading-normal mt-1">24 de
+                    Octubre, 2025</p>
+                </div>
+                <button
+                  class="flex items-center justify-center gap-2 h-10 px-4 bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm font-medium rounded-lg hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+                  <span class="material-symbols-outlined text-base">content_copy</span>
+                  <span>Copiar número</span>
+                </button>
+              </div>
+            </div>
+            <div class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8">
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-4">Resumen del Pedido</h3>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg flex-shrink-0">
+                    <div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-lg"
+                      data-alt="Señal de tráfico de Pare octogonal roja"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBG9SIksz2Ivh7_pQrCIpH2p39F3gQTMlVJSx0rSOdgssLiJHOFzJuRMw_irrZmQodfdPOZDQyOhdxU4V63XSRCUIBfsrQxKe9r6E3L1zshrrMpPtjX7b4CmUlWkji1vARMTm_EkCSHrVNGyI5jcJvmWjkSY5Q48UubkQCnVBYC1f_RKIV7qMYH6c70gi8Nj7uopr2wrsW0kY-dC4f4G072-NaMQpraqqzSwBAJyrszXRxZGucVzS1I1uXXZ4dwsWxtlRi5Haox0yQA");'>
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="font-semibold text-slate-800 dark:text-slate-200">Agua Purificada - Garrafón de 20 litros</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Cantidad: 2</p>
+                  </div>
+                  <p class="text-base font-semibold text-slate-900 dark:text-white ml-4">$10.000</p>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-lg flex-shrink-0">
+                    <div class="w-full h-full bg-center bg-no-repeat bg-cover rounded-lg"
+                      data-alt="Señal de límite de velocidad 50 circular con borde rojo"
+                      style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZUgumL3IpTDWatlAC7FVtkKaDL3DWiuOnnoVfqQelY_fEsaLFRFXQkxuuvvo3wILMpTwxXTPorfS2H_rtH36BLgrFY2I_yn-B6wx3BG2c7tVN-RlLnH07M-_pugPCzhjsO2vZBa_9rOSWuxyiYXbNMsP-TctUP9XhOeQhb3xghkVASG5nE0xkooeD39tBQNWr1x5l4RPhuosec4nHfo77HHCK44cXbKM3hGckeYjzagA8iZMa-EPlAr16tmDPFESEgsi8KZjckVoK");'>
+                    </div>
+                  </div>
+                  <div class="flex-grow">
+                    <p class="font-semibold text-slate-800 dark:text-slate-200">Agua Purificada - Botella de 1 litro</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Cantidad: 5</p>
+                  </div>
+                  <p class="text-base font-semibold text-slate-900 dark:text-white ml-4">$5.000</p>
+                </div>
+              </div>
+              <div class="mt-6 pt-6 border-t border-slate-200 dark:border-slate-800 space-y-2">
+                <div class="flex justify-between gap-x-6 py-1">
+                  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Subtotal</p>
+                  <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal text-right">$15.000
+                  </p>
+                </div>
+                <div class="flex justify-between gap-x-6 py-1">
+                  <p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal">Envío</p>
+                  <p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal text-right">$3.000</p>
+                </div>
+                <div class="flex justify-between gap-x-6 py-2 border-t border-slate-200 dark:border-slate-800 mt-2">
+                  <p class="text-slate-900 dark:text-white text-base font-bold leading-normal">Total</p>
+                  <p class="text-slate-900 dark:text-white text-base font-bold leading-normal text-right">$18.000</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-2">Detalles de Envío</h3>
+                <div class="text-slate-600 dark:text-slate-400 text-sm space-y-1">
+                  <p>Avenida Siempre Viva 742</p>
+                  <p>Springfield, CP 12345</p>
+                  <p>México</p>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-2">Entrega Estimada</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm">30 de Octubre, 2025</p>
+              </div>
+            </div>
+            <div
+              class="mt-10 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="/prototipo-ecommerce-aguas/perfil"
+                class="w-full sm:w-auto flex min-w-[140px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                <span class="truncate">Ver mis pedidos</span>
+          </a>
+              <a
+                class="w-full sm:w-auto flex min-w-[140px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-6 bg-transparent text-primary text-sm font-bold leading-normal tracking-[0.015em] border-2 border-primary/20 hover:bg-primary/10 transition-colors">
+                <span class="truncate">Imprimir recibo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>

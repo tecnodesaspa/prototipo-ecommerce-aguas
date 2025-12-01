@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <title>AquaPure Landing</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_319)">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_319">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/">Inicio</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/productos">Productos</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="/prototipo-ecommerce-aguas/carrito"
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <span
+              class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/perfil" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+            style="background-image: url('assets/imgs/no-profile.jpg')"></a>
+          <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+            id="btnMenu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section class="relative">
+        <div class="absolute inset-0 bg-cover bg-center"
+          style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWWsn4FnazVBSZhr6N7MA2ruD7oL-ErdlyrNwTBm3vYJMe6TQE-GgZH-8l8-6WxPUQSOnX2_umr-nZSVkJBvhBPHv0KSaCVDZMXnul0i4obCQT11Xu_l69VNa457safB9xa6DnBxa8gG-oBT1k4SIu-ANRABQMvqIBmeMc0Alz0TAOf4UctLhkwSsi-KuKQzFN_LCMEAll1DL2LKOB4btiUg7pzQKFhfPavdcBlV1Y-Fuy1lfd0m7_j6qZBF5HreryuVPa-ptrozid");'>
+        </div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 mx-auto max-w-4xl px-4 py-32 text-center text-white sm:py-48 lg:py-56">
+          <h1 class="text-4xl font-black tracking-tighter sm:text-5xl lg:text-6xl">Agua Purificada de la más alta
+            calidad</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-200">
+            Descubre la pureza en cada gota. AquaPure te ofrece agua purificada con los más altos estándares de calidad,
+            para que disfrutes de una hidratación saludable y refrescante.
+          </p>
+          <div class="mt-8">
+            <a class="inline-block rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50"
+              href="/prototipo-ecommerce-aguas/productos">
+              Ver productos
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 lg:px-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Beneficios del Agua
+              Purificada</h2>
+          </div>
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <div
+              class="flex flex-col items-center gap-4 rounded-lg border border-slate-200 bg-white p-6 text-center dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M174,47.75a254.19,254.19,0,0,0-41.45-38.3,8,8,0,0,0-9.18,0A254.19,254.19,0,0,0,82,47.75C54.51,79.32,40,112.6,40,144a88,88,0,0,0,176,0C216,112.6,201.49,79.32,174,47.75ZM128,216a72.08,72.08,0,0,1-72-72c0-57.23,55.47-105,72-118,16.53,13,72,60.75,72,118A72.08,72.08,0,0,1,128,216Zm55.89-62.66a57.6,57.6,0,0,1-46.56,46.55A8.75,8.75,0,0,1,136,200a8,8,0,0,1-1.32-15.89c16.57-2.79,30.63-16.85,33.44-33.45a8,8,0,0,1,15.78,2.68Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Pureza Garantizada</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">Nuestra agua pasa por un riguroso proceso de
+                  purificación, eliminando impurezas y garantizando su pureza.</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center gap-4 rounded-lg border border-slate-200 bg-white p-6 text-center dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M221.69,199.77,160,96.92V40h8a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h8V96.92L34.31,199.77A16,16,0,0,0,48,224H208a16,16,0,0,0,13.72-24.23ZM110.86,103.25A7.93,7.93,0,0,0,112,99.14V40h32V99.14a7.93,7.93,0,0,0,1.14,4.11L183.36,167c-12,2.37-29.07,1.37-51.75-10.11-15.91-8.05-31.05-12.32-45.22-12.81ZM48,208l28.54-47.58c14.25-1.74,30.31,1.85,47.82,10.72,19,9.61,35,12.88,48,12.88a69.89,69.89,0,0,0,19.55-2.7L208,208Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Salud y Bienestar</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">El agua purificada es esencial para mantener una
+                  buena salud, mejorando la hidratación y el funcionamiento del cuerpo.</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center gap-4 rounded-lg border border-slate-200 bg-white p-6 text-center dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white">Protección para tu Familia</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">AquaPure es segura para toda la familia, libre de
+                  contaminantes y microorganismos dañinos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-white dark:bg-background-dark/50">
+        <div class="container mx-auto px-4 lg:px-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Nuestros Productos
+            </h2>
+          </div>
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <div class="group flex flex-col">
+              <div class="overflow-hidden rounded-lg">
+                <div
+                  class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADO1aVrOPJ5yL8kgWB5L0-tlmXy8mUJi4dmUkl65tE_pV-PEa8cPaJQxeCTBXmpn-g0sm8UP6q2B6Fd0I8-cDrY0Q_TrF_aKY09xPtPhOkkl5Kz5ilXi_gP4PUqRX86N6Gc439gL-mmxUC0osT7GN3gm5gjenL77e8ybZfRcO9KFIIGaZ5O2A-TqMUkPAcCBkGwMRk4q4LGxgk-mVV9mQKt41hbb58u3OAnVdUMKM6WJCsnsOHXWlAZILCNnTB8gdnCZ6H__vozzZl");'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg font-medium text-slate-900 dark:text-white">Botella de 500 ml</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Ideal para llevar contigo a cualquier lugar.
+                </p>
+              </div>
+            </div>
+            <div class="group flex flex-col">
+              <div class="overflow-hidden rounded-lg">
+                <div
+                  class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOS_EMONhaUdDy79pNG6iBqrV7Xug09-NoY5didhYEPQ0HiGO4cNk2TXkmYhOLlmiRhCBZg5VYLy1-JYWLsHzTRfD3yUCWwnCCCGYTADqOVThJPB4cIihyZbyLfJ9Uj5bnLQlZ51bSRwCvgLl2LdWcsKMooB2DOFRsP_KNbPFdyeYT5iOkI1zAfT-avWQ0QNCq9tKdP4Mfv5MKfPMQlrk6DgTTkMzhGWAXoP5ymWUrQu6cO33yvihP-bBn0Ogb5d5Tcb_CaQIZ-HQN");'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg font-medium text-slate-900 dark:text-white">Garrafón de 20 litros</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Perfecto para el hogar o la oficina.</p>
+              </div>
+            </div>
+            <div class="group flex flex-col">
+              <div class="overflow-hidden rounded-lg">
+                <div
+                  class="w-full aspect-square bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBniF7STI-SRt1t7azFyllgWH7NTM9dw5QcoODWZI_7vUkwsXwBFW2qTcolMv-gb6BeKksx3WjLhISspK7Fo5ULBA9XgviU-c02ZCYmxnoiAt9XX9jTfNtYV0rX3MqbpMkf688gbPd7SGVrYWKgxlnMfhinjXjGkKqwyY7cmmHtXMyf9YluAQFJWRmtziC6KIgunCMf8c2sUFpPTJf2XRK7fwK7B7NVKmB4sTKtYQitOtfHMiwsFu03rCS14hG7Ty12_dMiM2TLYVbS");'>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="text-lg font-medium text-slate-900 dark:text-white">Paquete de 6 botellas</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Práctico para tener siempre a mano.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4 lg:px-6">
+          <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">Lo que dicen
+              nuestros clientes</h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">En AquaPure, la satisfacción de nuestros clientes
+              es nuestra mayor prioridad.</p>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="flex flex-col rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex items-center gap-2">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+              <blockquote class="mt-4 flex-1 text-slate-600 dark:text-slate-400">"¡El servicio de entrega es rapidísimo
+                y el agua es increíblemente fresca! Totalmente recomendado."</blockquote>
+              <footer class="mt-4">
+                <p class="font-bold text-slate-900 dark:text-white">Carlos Sánchez</p>
+              </footer>
+            </div>
+            <div
+              class="flex flex-col rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex items-center gap-2">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+              <blockquote class="mt-4 flex-1 text-slate-600 dark:text-slate-400">"Desde que cambiamos a AquaPure en la
+                oficina, todos se sienten más hidratados y con más energía. La calidad es inmejorable."</blockquote>
+              <footer class="mt-4">
+                <p class="font-bold text-slate-900 dark:text-white">Laura Gómez</p>
+              </footer>
+            </div>
+            <div
+              class="flex flex-col rounded-lg border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex items-center gap-2">
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+                <svg class="h-5 w-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                  </path>
+                </svg>
+              </div>
+              <blockquote class="mt-4 flex-1 text-slate-600 dark:text-slate-400">"El sabor del agua es puro y
+                refrescante. Mi familia y yo estamos muy contentos con la calidad del producto."</blockquote>
+              <footer class="mt-4">
+                <p class="font-bold text-slate-900 dark:text-white">Mariana Rodríguez</p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24 bg-white dark:bg-background-dark/50">
+        <div class="container mx-auto px-4 lg:px-6">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">¿Listo para
+              disfrutar de agua purificada?</h2>
+            <div class="mt-8">
+              <a class="inline-block rounded-lg bg-primary px-8 py-3 text-base font-bold text-white shadow-lg transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                href="/prototipo-ecommerce-aguas/contacto">
+                Contáctanos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-background-dark/50">
+      <div class="container mx-auto px-4 py-8 lg:px-6">
+        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div class="flex items-center gap-3">
+            <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319_footer)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319_footer">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="text-sm text-slate-600 dark:text-slate-400">© 2024 AquaPure. Todos los derechos
+              reservados.</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                </path>
+              </svg>
+            </a>
+            <a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z">
+                </path>
+              </svg>
+            </a>
+            <a class="text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">
+              <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fixed bottom-6 right-6 z-50" x-data="{ open: true }">
+      <div class="mb-4 w-80 rounded-xl bg-white shadow-2xl dark:bg-slate-900 sm:w-96" x-show="open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:enter-start="opacity-0 transform translate-y-4"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 transform translate-y-4"
+        x-transition:leave-start="opacity-100 transform translate-y-0">
+        <div class="flex items-center justify-between rounded-t-xl bg-primary px-4 py-3">
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319_chat)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319_chat">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="text-lg font-bold text-white">AquaBot</h3>
+          </div>
+          <button @click="open = false" class="rounded-full p-1 text-white hover:bg-white/20">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="h-96 overflow-y-auto p-4">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V4H8"></path>
+                  <path d="M16 4h-4v4"></path>
+                  <path d="M16 14v2.343a4 4 0 0 1-1.172 2.828L12 22l-2.828-2.828A4 4 0 0 1 8 16.343V14"></path>
+                  <rect height="8" rx="2" width="16" x="4" y="6"></rect>
+                </svg>
+              </div>
+              <div class="max-w-xs rounded-r-lg rounded-bl-lg bg-slate-100 p-3 text-sm dark:bg-slate-800">
+                <p class="text-slate-800 dark:text-slate-200">¡Hola! 👋 Soy AquaBot, tu asistente virtual. ¿Cómo puedo
+                  ayudarte hoy con tu servicio de agua purificada?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-200 p-4 dark:border-slate-800">
+          <div class="relative">
+            <input
+              class="w-full rounded-full border-slate-300 bg-slate-50 py-2 pl-4 pr-12 text-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800"
+              placeholder="Escribe tu mensaje..." type="text" />
+            <button
+              class="absolute inset-y-0 right-0 flex h-full w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" x2="11" y1="2" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button @click="open = !open"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" x-show="!open" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" style="display: none;" viewBox="0 0 24 24" x-show="open" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Proceso de Pago - Señales Viales</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        display: ["Public Sans"],
+                    },
+                    borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-[#333333] dark:text-gray-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+            <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+                <div class="flex items-center gap-3">
+                    <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_319)">
+                            <path
+                                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_319">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+                </div>
+                <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/">Inicio</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/productos">Productos</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+                        href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="/prototipo-ecommerce-aguas/carrito"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+                        <span class="material-symbols-outlined"> shopping_cart </span>
+                        <span
+                            class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+                    </a>
+                    <a href="/prototipo-ecommerce-aguas/perfil"
+                        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+                        style="background-image: url('../assets/imgs/no-profile.jpg')"></a>
+                    <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+                        id="btnMenu">
+                        <span class="material-symbols-outlined text-2xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="lg:col-span-1">
+                        <div class="space-y-8">
+                            <div>
+                                <nav class="text-sm font-medium text-subtle-light dark:text-subtle-dark">
+                                    <a class="hover:text-primary dark:hover:text-primary"
+                                        href="/prototipo-ecommerce-aguas/carrito">Carrito</a>
+                                    <span class="mx-2">/</span>
+                                    <span class="text-content-light dark:text-content-dark">Pago</span>
+                                </nav>
+                                <h2
+                                    class="mt-4 text-4xl font-bold tracking-tight text-content-light dark:text-content-dark">
+                                    Pago</h2>
+                            </div>
+                            <form class="space-y-6">
+                                <div class="space-y-6">
+                                    <h3 class="text-xl font-semibold">Información de Envío</h3>
+                                    <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
+                                        <div class="sm:col-span-6">
+                                            <label class="block text-sm font-medium" for="email">Dirección de correo
+                                                electrónico</label>
+                                            <div class="mt-1">
+                                                <input autocomplete="email"
+                                                    class="block w-full rounded border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary placeholder-subtle-light dark:placeholder-subtle-dark"
+                                                    id="email" name="email" placeholder="tu@ejemplo.com" type="email" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-6">
+                                            <label class="block text-sm font-medium" for="address">Dirección</label>
+                                            <div class="mt-1">
+                                                <input autocomplete="street-address"
+                                                    class="block w-full rounded border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary placeholder-subtle-light dark:placeholder-subtle-dark"
+                                                    id="address" name="address" placeholder="Calle Principal 123"
+                                                    type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label class="block text-sm font-medium" for="city">Ciudad</label>
+                                            <div class="mt-1">
+                                                <input autocomplete="address-level2"
+                                                    class="block w-full rounded border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary placeholder-subtle-light dark:placeholder-subtle-dark"
+                                                    id="city" name="city" placeholder="Tu Ciudad" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label class="block text-sm font-medium" for="state">Estado /
+                                                Provincia</label>
+                                            <div class="mt-1">
+                                                <input autocomplete="address-level1"
+                                                    class="block w-full rounded border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary placeholder-subtle-light dark:placeholder-subtle-dark"
+                                                    id="state" name="state" placeholder="Estado" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <label class="block text-sm font-medium" for="zip">Código Postal</label>
+                                            <div class="mt-1">
+                                                <input autocomplete="postal-code"
+                                                    class="block w-full rounded border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary placeholder-subtle-light dark:placeholder-subtle-dark"
+                                                    id="zip" name="zip" placeholder="12345" type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <h3 class="text-xl font-semibold">Método de Envío</h3>
+                                    <div class="space-y-4">
+                                        <label
+                                            class="flex items-center gap-4 rounded-lg border p-4 cursor-pointer border-border-light dark:border-border-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary">
+                                            <input checked=""
+                                                class="form-radio h-5 w-5 text-primary border-border-light dark:border-border-dark focus:ring-primary"
+                                                name="shipping-method" type="radio" value="standard" />
+                                            <div class="flex-grow">
+                                                <p class="font-medium">Estándar (3-5 días hábiles)</p>
+                                                <p class="text-sm text-subtle-light dark:text-subtle-dark">Gratis</p>
+                                            </div>
+                                        </label>
+                                        <label
+                                            class="flex items-center gap-4 rounded-lg border p-4 cursor-pointer border-border-light dark:border-border-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary">
+                                            <input
+                                                class="form-radio h-5 w-5 text-primary border-border-light dark:border-border-dark focus:ring-primary"
+                                                name="shipping-method" type="radio" value="express" />
+                                            <div class="flex-grow">
+                                                <p class="font-medium">Express (1-2 días hábiles)</p>
+                                                <p class="text-sm text-subtle-light dark:text-subtle-dark">$3.000</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <h3 class="text-xl font-semibold">Detalles de Pago</h3>
+                                    <div class="space-y-4">
+                                        <label
+                                            class="flex items-center gap-4 rounded-lg border p-4 cursor-pointer border-border-light dark:border-border-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary">
+                                            <input checked=""
+                                                class="form-radio h-5 w-5 text-primary border-border-light dark:border-border-dark focus:ring-primary"
+                                                name="payment-method" type="radio" value="credit-card" />
+                                            <span class="font-medium">Efectivo</span>
+                                        </label>
+                                        <label
+                                            class="flex items-center gap-4 rounded-lg border p-4 cursor-pointer border-border-light dark:border-border-dark has-[:checked]:border-primary has-[:checked]:ring-2 has-[:checked]:ring-primary">
+                                            <input
+                                                class="form-radio h-5 w-5 text-primary border-border-light dark:border-border-dark focus:ring-primary"
+                                                name="payment-method" type="radio" value="paypal" />
+                                            <span class="font-medium">Transferencia</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-1">
+                        <div class="sticky top-20">
+                            <div
+                                class="bg-background-light dark:bg-background-dark/50 rounded-lg border border-border-light dark:border-border-dark p-6">
+                                <h3 class="text-xl font-semibold">Resumen del Pedido</h3>
+                                <div class="mt-6 space-y-4">
+                                    <div class="flex justify-between">
+                                        <p class="text-subtle-light dark:text-subtle-dark">Subtotal</p>
+                                        <p>$18.000</p>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <p class="text-subtle-light dark:text-subtle-dark">Envío</p>
+                                        <p>Gratis</p>
+                                    </div>
+                                    <div
+                                        class="flex justify-between border-t border-border-light dark:border-border-dark pt-4 font-semibold">
+                                        <p>Total</p>
+                                        <p>$18.000</p>
+                                    </div>
+                                </div>
+                                <button id="btnSubmitOrder"
+                                    class="mt-8 w-full bg-primary text-white font-bold py-3 px-4 rounded-lg hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-background-light dark:focus:ring-offset-background-dark">
+                                    Realizar Pedido
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+        document.getElementById("btnSubmitOrder").addEventListener("click", function () {
+            window.location.href = "/prototipo-ecommerce-aguas/confirmacion";
+        });
+    </script>
+</body>
+
+</html>

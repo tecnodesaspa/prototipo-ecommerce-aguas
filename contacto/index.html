@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>AquaPure Contacto</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#13a4ec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101c22",
+          },
+          fontFamily: {
+            display: ["Public Sans"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+  <div class="flex min-h-screen w-full flex-col">
+    <header class="sticky top-0 z-20 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+      <div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 py-3 lg:px-6">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6_319)">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6_319">
+                <rect fill="white" height="48" width="48"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <a href="/prototipo-ecommerce-aguas/" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">AquaPure</a>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex" id="navMenu">
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/">Inicio</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/productos">Productos</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/nosotros">Nosotros</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-primary"
+            href="/prototipo-ecommerce-aguas/contacto">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="/prototipo-ecommerce-aguas/carrito"
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors relative flex items-center">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <span
+              class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">1</span>
+          </a>
+          <a href="/prototipo-ecommerce-aguas/perfil" class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 cursor-pointer"
+            style="background-image: url('../assets/imgs/no-profile.jpg')"></a>
+          <button class="md:hidden flex items-center justify-center h-10 w-10 text-primary dark:text-white"
+            id="btnMenu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <div class="container mx-auto px-4 py-12 lg:py-24">
+        <div class="mx-auto max-w-4xl">
+          <div class="text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Ponte en
+              Contacto</h1>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">¿Tienes alguna pregunta o necesitas ayuda?
+              Estamos aquí para ayudarte.</p>
+          </div>
+          <div class="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-2">
+            <div class="space-y-8">
+              <div>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Información de Contacto</h2>
+                <div class="mt-6 space-y-4">
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                      <span class="material-symbols-outlined"> phone </span>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Teléfono</h3>
+                      <p class="text-slate-600 dark:text-slate-400">+1 (555) 123-4567</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div
+                      class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                      <span class="material-symbols-outlined"> mail </span>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Correo Electrónico</h3>
+                      <p class="text-slate-600 dark:text-slate-400">info@aquapure.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Formulario de Contacto</h2>
+                <form class="mt-6 space-y-4">
+                  <div>
+                    <label class="sr-only" for="name">Nombre</label>
+                    <input
+                      class="form-input block w-full rounded-lg border-slate-300 bg-background-light px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-background-dark dark:text-white dark:placeholder:text-slate-500"
+                      id="name" name="name" placeholder="Tu nombre" type="text" />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="email">Correo Electrónico</label>
+                    <input
+                      class="form-input block w-full rounded-lg border-slate-300 bg-background-light px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-background-dark dark:text-white dark:placeholder:text-slate-500"
+                      id="email" name="email" placeholder="Tu correo electrónico" type="email" />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="phone">Teléfono</label>
+                    <input
+                      class="form-input block w-full rounded-lg border-slate-300 bg-background-light px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-background-dark dark:text-white dark:placeholder:text-slate-500"
+                      id="phone" name="phone" placeholder="Tu teléfono" type="tel" />
+                  </div>
+                  <div>
+                    <label class="sr-only" for="message">Mensaje</label>
+                    <textarea
+                      class="form-textarea block w-full rounded-lg border-slate-300 bg-background-light px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary dark:border-slate-600 dark:bg-background-dark dark:text-white dark:placeholder:text-slate-500"
+                      id="message" name="message" placeholder="Tu mensaje" rows="4"></textarea>
+                  </div>
+                  <div>
+                    <button
+                      class="w-full rounded-full bg-primary px-6 py-3 text-base font-bold text-white shadow-md transition-transform hover:scale-105"
+                      type="submit">Enviar Mensaje</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="space-y-8">
+              <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Preguntas Frecuentes (FAQ)</h2>
+              <div class="space-y-4">
+                <details class="group rounded-lg bg-background-light p-4 shadow-sm dark:bg-background-dark">
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-800 dark:text-slate-200">
+                    ¿Cuáles son los métodos de pago disponibles?
+                    <span class="transform transition-transform duration-300 group-open:rotate-180">
+                      <span class="material-symbols-outlined"> expand_more </span>
+                    </span>
+                  </summary>
+                  <div class="mt-4 text-slate-600 dark:text-slate-400">
+                    Aceptamos tarjetas de crédito y débito (Visa, MasterCard, American Express), así como pagos a través
+                    de plataformas digitales seguras como PayPal.
+                  </div>
+                </details>
+                <details class="group rounded-lg bg-background-light p-4 shadow-sm dark:bg-background-dark">
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-800 dark:text-slate-200">
+                    ¿Cuál es el tiempo de entrega?
+                    <span class="transform transition-transform duration-300 group-open:rotate-180">
+                      <span class="material-symbols-outlined"> expand_more </span>
+                    </span>
+                  </summary>
+                  <div class="mt-4 text-slate-600 dark:text-slate-400">
+                    Nuestro tiempo de entrega estándar es de 24 a 48 horas en áreas metropolitanas. Puedes consultar los
+                    tiempos específicos para tu ubicación al momento de realizar tu pedido.
+                  </div>
+                </details>
+                <details class="group rounded-lg bg-background-light p-4 shadow-sm dark:bg-background-dark">
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-800 dark:text-slate-200">
+                    ¿Cómo puedo rastrear mi pedido?
+                    <span class="transform transition-transform duration-300 group-open:rotate-180">
+                      <span class="material-symbols-outlined"> expand_more </span>
+                    </span>
+                  </summary>
+                  <div class="mt-4 text-slate-600 dark:text-slate-400">
+                    Una vez que tu pedido sea despachado, recibirás un correo electrónico con un enlace de seguimiento
+                    para que puedas ver el estado de tu entrega en tiempo real.
+                  </div>
+                </details>
+                <details class="group rounded-lg bg-background-light p-4 shadow-sm dark:bg-background-dark">
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between font-semibold text-slate-800 dark:text-slate-200">
+                    ¿Ofrecen planes de suscripción?
+                    <span class="transform transition-transform duration-300 group-open:rotate-180">
+                      <span class="material-symbols-outlined"> expand_more </span>
+                    </span>
+                  </summary>
+                  <div class="mt-4 text-slate-600 dark:text-slate-400">
+                    ¡Sí! Ofrecemos planes de suscripción flexibles para que nunca te quedes sin agua. Puedes
+                    personalizar la frecuencia y cantidad de tus entregas y disfrutar de descuentos especiales.
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <div class="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
+            <svg class="h-7 w-7 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                fill="currentColor"></path>
+            </svg>
+            <span>AquaPure</span>
+          </div>
+          <nav class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Inicio</a>
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Productos</a>
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Servicios</a>
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Nosotros</a>
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Contacto</a>
+          </nav>
+          <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 AquaPure. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="fixed bottom-6 right-6 z-50" x-data="{ open: true }">
+      <div class="mb-4 w-80 rounded-xl bg-white shadow-2xl dark:bg-slate-900 sm:w-96" x-show="open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-end="opacity-100 transform translate-y-0"
+        x-transition:enter-start="opacity-0 transform translate-y-4"
+        x-transition:leave="transition ease-in duration-200" x-transition:leave-end="opacity-0 transform translate-y-4"
+        x-transition:leave-start="opacity-100 transform translate-y-0">
+        <div class="flex items-center justify-between rounded-t-xl bg-primary px-4 py-3">
+          <div class="flex items-center gap-3">
+            <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_6_319_chat)">
+                <path
+                  d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                  fill="currentColor"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_6_319_chat">
+                  <rect fill="white" height="48" width="48"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+            <h3 class="text-lg font-bold text-white">AquaBot</h3>
+          </div>
+          <button @click="open = false" class="rounded-full p-1 text-white hover:bg-white/20">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 18 18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="h-96 overflow-y-auto p-4">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 8V4H8"></path>
+                  <path d="M16 4h-4v4"></path>
+                  <path d="M16 14v2.343a4 4 0 0 1-1.172 2.828L12 22l-2.828-2.828A4 4 0 0 1 8 16.343V14"></path>
+                  <rect height="8" rx="2" width="16" x="4" y="6"></rect>
+                </svg>
+              </div>
+              <div class="max-w-xs rounded-r-lg rounded-bl-lg bg-slate-100 p-3 text-sm dark:bg-slate-800">
+                <p class="text-slate-800 dark:text-slate-200">¡Hola! 👋 Soy AquaBot, tu asistente virtual. ¿Cómo puedo
+                  ayudarte hoy con tu servicio de agua purificada?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-200 p-4 dark:border-slate-800">
+          <div class="relative">
+            <input
+              class="w-full rounded-full border-slate-300 bg-slate-50 py-2 pl-4 pr-12 text-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800"
+              placeholder="Escribe tu mensaje..." type="text" />
+            <button
+              class="absolute inset-y-0 right-0 flex h-full w-10 items-center justify-center rounded-full text-primary hover:bg-primary/10">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="22" x2="11" y1="2" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button @click="open = !open"
+        class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary/50">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" x-show="!open" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" style="display: none;" viewBox="0 0 24 24" x-show="open" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </div>
+  <script src="../main.js"></script>
+</body>
+
+</html>
