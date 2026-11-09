@@ -37,6 +37,28 @@
             font-family: 'Public Sans', sans-serif;
         }
     </style>
+<style>
+/* Responsive layout: preserve content and keep controls within the viewport. */
+:where(main, section, article, aside, header, footer, nav, form, fieldset, .flex > *, .grid > *) { min-width: 0; }
+img, video, iframe { max-width: 100%; }
+:where(input, select, textarea) { max-width: 100%; }
+:where(p, h1, h2, h3, a, label) { overflow-wrap: break-word; }
+@media (max-width: 767px) {
+  .px-40, .px-20, .px-16, .px-12, .px-10 { padding-left: 1rem !important; padding-right: 1rem !important; }
+  [class*="min-w-["] { min-width: 0 !important; }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+  .toast-notification { max-width: calc(100vw - 2rem); right: 1rem; }
+}
+
+/* Tablet navigation, footer wrapping, and decorative accents. */
+.material-symbols-outlined { flex-shrink: 0; overflow-wrap: normal; white-space: nowrap; }
+footer li, footer a { overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  footer .md\:grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .absolute.-right-6 { right: 0; }
+}
+</style>
+<meta name="currency" content="CLP">
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#0d171b] dark:text-slate-200">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
@@ -121,7 +143,7 @@
 </div>
 <div>
 <h3 class="text-[#0d171b] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] pb-2 pt-4">6. Información de Contacto</h3>
-<p class="text-[#0d171b] dark:text-slate-300 text-base font-normal leading-relaxed">Si tienes preguntas o comentarios sobre esta Política de Privacidad, por favor contáctanos en: <a class="text-primary hover:underline" href="mailto:privacidad@aquapure.com">privacidad@aquapure.com</a>.</p>
+<p class="text-[#0d171b] dark:text-slate-300 text-base font-normal leading-relaxed">Si tienes preguntas o comentarios sobre esta Política de Privacidad, por favor contáctanos en: <a class="text-primary hover:underline" href="mailto:privacidad@aquapure.cl">privacidad@aquapure.cl</a>.</p>
 </div>
 </div>
 </div>
